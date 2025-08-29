@@ -33,38 +33,57 @@ function App() {
 
   return (
     <div className="app">
-      <div className="inca-pattern"></div>
-      <div className="container">
-        <div className="llama-icon">🦙</div>
-        <h1 className="emperor-title">El Emperador Countdown</h1>
-        <p className="subtitle">Jusqu'à Samedi 30 Août • 15h30</p>
-        
-        <div className="countdown-grid">
-          <div className="time-block">
-            <div className="number">{timeLeft.days.toString().padStart(2, '0')}</div>
-            <div className="label">Jours</div>
-          </div>
-          <div className="separator">:</div>
-          <div className="time-block">
-            <div className="number">{timeLeft.hours.toString().padStart(2, '0')}</div>
-            <div className="label">Heures</div>
-          </div>
-          <div className="separator">:</div>
-          <div className="time-block">
-            <div className="number">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-            <div className="label">Minutes</div>
-          </div>
-          <div className="separator">:</div>
-          <div className="time-block">
-            <div className="number">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-            <div className="label">Secondes</div>
+      <div className="background-pattern"></div>
+      <div className="magic-sparkles">
+        <div className="sparkle"></div>
+        <div className="sparkle"></div>
+        <div className="sparkle"></div>
+        <div className="sparkle"></div>
+        <div className="sparkle"></div>
+      </div>
+      
+      <div className="kuzco-shrine">
+        <div className="kuzco-mega-hero">
+          <div className="kuzco-throne">
+            <div className="kuzco-avatar">
+              <img src="/kuzco.png" alt="Sa Majesté Impériale Kuzco" />
+            </div>
+            <div className="royal-aura"></div>
+            <div className="rotating-ring"></div>
           </div>
         </div>
-
-        <div className="quote">
-          "Boom, baby! 👑"
+        <div className="emperor-title">
+          <h1 className="royal-name">Boom, baby! Le compte à rebours de l'Empereur</h1>
         </div>
       </div>
+
+      <div className="announcement-banner">
+        <div className="banner-text">
+          <span className="event-date">Samedi 30 Août • 15h30</span>
+        </div>
+      </div>
+
+      <div className="countdown-palace">
+        <div className="countdown-grid">
+          <div className="time-throne">
+            <span className="time-number">{timeLeft.days.toString().padStart(2, '0')}</span>
+            <span className="time-label">Jours</span>
+          </div>
+          <div className="time-throne">
+            <span className="time-number">{timeLeft.hours.toString().padStart(2, '0')}</span>
+            <span className="time-label">Heures</span>
+          </div>
+          <div className="time-throne">
+            <span className="time-number">{timeLeft.minutes.toString().padStart(2, '0')}</span>
+            <span className="time-label">Minutes</span>
+          </div>
+          <div className="time-throne">
+            <span className="time-number">{timeLeft.seconds.toString().padStart(2, '0')}</span>
+            <span className="time-label">Secondes</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }
